@@ -130,7 +130,7 @@ nav a {
   border:4px solid black;
 }
 .container-fixed{
-  background-color:rgb(210, 206, 206);
+  background-color:white;
   margin-top:11%;
   margin-right: 17%;
   margin-left: 17%;
@@ -153,5 +153,13 @@ nav a {
     justify-content: center;
     align-items: center}
 
-
+.footer {
+    background-color: #e2dc29;
+    text-align: center;
+    justify-content: Center;;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
   
