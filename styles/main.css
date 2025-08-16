@@ -101,7 +101,7 @@ nav a {
 
 #showcase {
   position: relative;
-  background-image: url(../images/color-stripes.jpg); 
+  /* background-image: url(../images/color-stripes.jpg);  */
  
   min-height: 700px; }
   #showcase .primary-overlay {
