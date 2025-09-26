@@ -4,33 +4,33 @@
 //PRODUCTS//
 let products = {
 whiteCoffee: {
-  stock:10,
+  stock:5,
   price:5
 },
 
 blackCoffee: {
-stock:10,
+stock:5,
 price:4
 },
 
 hotChocolate: {
-stock:10,
+stock:5,
 price:5
 },
 
 muffin: {
-stock:10,
+stock:5,
 price:6
 },
 
 
 gingerBreadMan: {
-stock:12,
+stock:5,
 price:4
 },
 
 cookie: {
-stock:12,
+stock:5,
 price:3
 }
 
@@ -155,6 +155,8 @@ function fillOrder(){
   // display everything
 
   let saleTotal=0
+  let zeroStock=[]
+
   for(let i=0; i <customer.order.length;i++){
 
     let productName = customer.order[i]
@@ -162,14 +164,13 @@ function fillOrder(){
     if (products[productName].stock>0){
         products[productName].stock--   //decrease the qty of stock by 1, subtracting 1//
         saleTotal += products[productName].price //+= means "add this value to the existing variable"//
-    } 
-    
-    else{
-      
-      showAlert("I'm sorry, we're out of " + productName)
+    } else {
+      zeroStock.push(productName)
+      zeroStock=zeroStock  
+      showAlert("I'm sorry, we're out of " + zeroStock.join(", "))
+      }
     }
-
-  }
+    
     cash += saleTotal
     customer.order=[]
     displayProducts()
@@ -178,6 +179,8 @@ function fillOrder(){
 
 }
 document.getElementById("fillOrder").onclick = fillOrder
+
+
 
 
 
