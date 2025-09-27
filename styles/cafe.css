@@ -1,9 +1,6 @@
 /* // -- JAVASCRIPT CAFE CSS -- // */
 
-main {
-  max-width: 800px;
-  margin: 0 auto;
-}
+
 
 body {
 	background: white;
@@ -12,6 +9,8 @@ body {
 	font-family: 'Fira Code', monospace;
 	text-align: center;
 	margin-top: 20px;
+	max-width: 800px;
+  margin: 0 auto;
 }
 
 
