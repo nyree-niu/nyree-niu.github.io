@@ -55,10 +55,10 @@ body {
     justify-content: center;
     padding:20px;
     gap:30px;
-    
-   
-
+    width:auto;
+    height:auto;
   }
+
 .navbar-link {
     list-style=none;
     color: #112a4a;
@@ -67,6 +67,8 @@ body {
     cursor: pointer;
   
 }
+
+
  nav {
 text-align: center;
 margin: 20px 0 0 ;
