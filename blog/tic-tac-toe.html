@@ -3,21 +3,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/styles/tic-tac-toe.css">
+        <!-- <link rel="stylesheet" href=""> -->
     </head>
 
   
 
     <body>
 
-       <div class="return">
-      <a href="../index.html">Return to Home</a>
-    </div>
-
-    <div class="return">
-      <a href="../mydevjourney.html">Return to Blog</a>
-    </div>
- 
+    
 
 
         <h1>Tic-Tac-Toe</h1>        
@@ -42,5 +35,78 @@
         <h2 id="subtitle">Click on a cell to start!</h2>
         <button class="button" id="restart">Restart</button>
         <script src="/js/tic-tac-toe.js"></script>
+
+   
     </body>
 </html>
+
+
+
+<style>
+body {
+  background-color:rgb(241, 239, 215);
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  }
+
+
+  
+table {
+    margin-right: center;
+    margin-left: center;
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color:rgb(241, 239, 215);
+    height: 200px;
+    width: 200px;
+
+  }
+  
+
+h1 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 30px;
+    color: #112a4a
+  }
+  
+td {
+    width: 9vw;
+    height: 9vw;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 25px;
+    border:  #112a4a solid 3px;
+    color:  #112a4a;
+  }
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-top:10%;
+  color: hsl(22, 93%, 50%);
+}  
+
+.button{
+  margin-top:10%;
+  font-family: 'Fira Code', monospace;
+  font-size: 15px;
+  cursor:pointer;
+  border-radius:5px;
+  padding:7px 20px;
+
+}
+
+button:hover {
+  color: #112a4a;
+  background-color:rgba(red, green, blue, alpha);
+  backdrop-filter:blur(11.7px);
+  -webkit-backdrop-filter: blur(11.7px);
+
+}
+
+
+</style>

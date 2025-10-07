@@ -1,6 +1,7 @@
 console.log("Welcome to Tic-Tac-Toe! Enjoy!")
 
 
+
 let noughtsTurn = true
 
 let gameIsOver
@@ -44,7 +45,7 @@ function cellClicked(e) {
         noughtsTurn = !noughtsTurn //toggle, if noughtsTurn was true, it becomes false; if noughtsTure was false, it becomes true //
         
       
-        gameIsOver ? subtitle.innerHTML=(symbol) +" Wins!! 😎 🎉" : filledCount===9 ?
+        gameIsOver ? subtitle.innerHTML=(symbol) +" Wins!! 😎 🎉": filledCount===9 ?
        subtitle.innerHTML = "It's a TIE!! 🤝 😅 " : subtitle.innerHTML = (noughtsTurn ? "O" : "X") + "'s turn";
       }
 } 
@@ -70,31 +71,31 @@ function checkForWin(symbol){
           cells[7].innerHTML == symbol &&
           cells[8].innerHTML == symbol) {
               gameIsOver = true;
-         
+
 } else if(
           cells[0].innerHTML == symbol &&
           cells[3].innerHTML == symbol &&
           cells[6].innerHTML == symbol) {
               gameIsOver = true;
-             
+
 } else if(
           cells[1].innerHTML == symbol &&
           cells[4].innerHTML == symbol &&
           cells[7].innerHTML == symbol) {
               gameIsOver = true;
-            
+
 } else if(
           cells[2].innerHTML == symbol &&
           cells[5].innerHTML == symbol &&
           cells[8].innerHTML == symbol) {
               gameIsOver = true;
-    
+              
 } else if(
           cells[0].innerHTML == symbol &&
           cells[4].innerHTML == symbol &&
           cells[8].innerHTML == symbol) {
               gameIsOver = true;
-            
+
  } else if(
           cells[2].innerHTML == symbol &&
           cells[4].innerHTML == symbol &&
