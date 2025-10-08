@@ -16,8 +16,11 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     z-index: 2000;
+
   
 }
+
+
 
 .blog-content {
   max-width: 800px;
@@ -182,9 +185,10 @@ nav a {
       scrollbar-shadow-color: #454444;
       margin-top:7%;
       margin-bottom:7%;
-      margin-left:5%;
-      margin-right:5%;
+      position:fixed;
       width:auto;
-      height:auto;
-
+      text-align: center;
+      justify-content: Center;;
+      padding: 15px;
+      margin-left:20%;
     }
